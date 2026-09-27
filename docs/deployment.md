@@ -114,8 +114,9 @@ For setup after Vercel CLI login or after creating a Vercel token, use the boots
 ```bash
 # Optional for unattended runs. Omit if `vercel whoami` already works locally.
 export VERCEL_TOKEN="..."
-export VERCEL_TEAM_ID="team_mhftpUYWIR5oysxTjLnSLCol"
-export VERCEL_PROJECT_NAME="vault-mcp-connector"
+export DEPLOY_TEAM_ID="team_mhftpUYWIR5oysxTjLnSLCol"
+export DEPLOY_PROJECT_NAME="vault-mcp-connector"
+export DEPLOY_ENVIRONMENT="production"
 export DEPLOY_AUTH_MODE="oauth"
 export PUBLIC_BASE_URL="https://vault-mcp.example.com"
 export DATABASE_URL="postgres://user:password@host:5432/vault_mcp"
@@ -138,8 +139,9 @@ For a temporary private deployment before the OAuth provider is ready, use stati
 ```bash
 export DEPLOY_AUTH_MODE="static"
 export VERCEL_TOKEN="..."
-export VERCEL_TEAM_ID="team_mhftpUYWIR5oysxTjLnSLCol"
-export VERCEL_PROJECT_NAME="vault-mcp-connector"
+export DEPLOY_TEAM_ID="team_mhftpUYWIR5oysxTjLnSLCol"
+export DEPLOY_PROJECT_NAME="vault-mcp-connector"
+export DEPLOY_ENVIRONMENT="production"
 export PUBLIC_BASE_URL="https://vault-mcp.example.com"
 export DATABASE_URL="postgres://user:password@host:5432/vault_mcp"
 export MCP_SYNC_TOKEN="long-random-sync-token"

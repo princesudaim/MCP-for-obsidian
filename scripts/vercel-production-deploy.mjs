@@ -5,9 +5,9 @@ import process from "node:process";
 const args = new Set(process.argv.slice(2));
 const checkOnly = args.has("--check");
 const runRemoteSmoke = args.has("--smoke") || process.env.RUN_REMOTE_SMOKE === "1";
-const environment = process.env.VERCEL_ENVIRONMENT ?? "production";
-const teamId = process.env.VERCEL_TEAM_ID ?? "team_mhftpUYWIR5oysxTjLnSLCol";
-const projectName = process.env.VERCEL_PROJECT_NAME ?? "vault-mcp-connector";
+const environment = process.env.DEPLOY_ENVIRONMENT ?? "production";
+const teamId = process.env.DEPLOY_TEAM_ID ?? "team_mhftpUYWIR5oysxTjLnSLCol";
+const projectName = process.env.DEPLOY_PROJECT_NAME ?? "vault-mcp-connector";
 const authMode = process.env.DEPLOY_AUTH_MODE ?? "oauth";
 
 const vercelToken = process.env.VERCEL_TOKEN;
